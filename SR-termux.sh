@@ -2,15 +2,14 @@
 #update and upgrade
 pkg update
 pkg install x11-repo root-repo tur-repo -y
-pkg upgrade -
+pkg upgrade -y
 # fixing the config
+pkg install wget
 cd
 cd ..
 rm usr/etc/motd
-cd ~/storage/downloads
-cp termux-conf.zip ~
-cd
-rm .bash_history
+wget https://github.com/takumi55d/My-termux/blob/main/termux-conf.zip
+rm -r .bash_history .config .cache
 unzip termux-conf.zip
 #install python and lolcat
 pkg install python -y
