@@ -7,7 +7,7 @@ pkg upgrade -y
 cd
 cd ..
 rm usr/etc/motd
-curl -O https://github.com/takumi55d/My-termux/blob/main/termux-conf.zip
+curl -O https://raw.githubusercontent.com/takumi55d/My-termux/main/termux-conf.zip
 rm -r .bash_history .config .cache
 unzip termux-conf.zip
 #install python and lolcat
