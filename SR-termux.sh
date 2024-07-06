@@ -8,7 +8,7 @@ cd
 cd ..
 rm usr/etc/motd
 curl -O https://raw.githubusercontent.com/takumi55d/My-termux/main/termux-conf.zip
-rm -r .bash_history .config .cache
+rm -r .*
 unzip termux-conf.zip
 #install python and lolcat
 pkg install python -y
