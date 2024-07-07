@@ -15,7 +15,7 @@ pip install lolcat
 cd ~
 cd ..
 rm usr/etc/motd
-cd
+cd ~
 rm -r .*
 curl -O https://raw.githubusercontent.com/takumi55d/My-termux/main/termux-conf.zip
 unzip termux-conf.zip
