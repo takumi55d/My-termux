@@ -20,3 +20,4 @@ rm -r .*
 curl -O https://raw.githubusercontent.com/takumi55d/My-termux/main/termux-conf.zip
 unzip termux-conf.zip
 chsh -s fish
+rm termux-conf.zip 
