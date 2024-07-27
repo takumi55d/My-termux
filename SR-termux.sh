@@ -28,7 +28,8 @@ rm termux-conf.zip
 cd ~
 curl -O https://raw.githubusercontent.com/xero/figlet-fonts/master/3d.flf
 mv 3d.flf 3D_figlet_font.flf
-mkdir .local/font/
+mkdir .local/
+mkdir .local/font
 mv 3D_figlet_font.flf ~/.local/font/
 
 exec fish
