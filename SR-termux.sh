@@ -13,19 +13,21 @@ pip install lolcat
 
 # pd install archlinux
 
-# get figlet font
+# fixing the config and changing shell to fish 
+cd ..
+rm usr/etc/motd
+cd ~
+rm -rf ~/.*
+curl -O https://raw.githubusercontent.com/takumi55d/My-termux/main/termux-conf.zip
+unzip termux-conf.zip
+chsh -s fish
+rm termux-conf.zip 
+
+# getting 3D figlet font
+cd ~
 curl -O https://raw.githubusercontent.com/xero/figlet-fonts/master/3d.flf
 mv 3d.flf 3D_figlet_font.flf
 mkdir ~/.local/font/
 mv 3D_figlet_font.flf ~/.local/font/
 
-# fixing the config and changing shell to fish 
-cd ..
-rm usr/etc/motd
-cd ~
-rm -rf .*
-curl -O https://raw.githubusercontent.com/takumi55d/My-termux/main/termux-conf.zip
-unzip termux-conf.zip
-chsh -s fish
-rm termux-conf.zip 
 exec fish
