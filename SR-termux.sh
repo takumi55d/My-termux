@@ -16,7 +16,7 @@ pip install lolcat
 # get figlet font
 curl -O https://raw.githubusercontent.com/xero/figlet-fonts/master/3d.flf
 mv 3d.flf 3D_figlet_font.flf
-mkdir .local/font/
+mkdir ~/.local/font/
 mv 3D_figlet_font.flf ~/.local/font/
 
 # fixing the config and changing shell to fish 
