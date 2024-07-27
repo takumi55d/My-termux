@@ -1,23 +1,31 @@
 #!bin/bash
+
 # update and upgrade
 pkg update
 pkg install x11-repo root-repo tur-repo -y
 pkg upgrade -y
 
 # install the tools 
-pkg install micro starship figlet fish eza proot-distro python -y
+pkg install micro starship figlet fish eza proot-distro python vim nerdfix -y
+
 #install lolcat
 pip install lolcat
 
 # pd install archlinux
 
+# get figlet font
+curl -O https://raw.githubusercontent.com/xero/figlet-fonts/master/3d.flf
+mv 3d.flf 3D_figlet_font.flf
+mkdir .local/font/
+mv 3D_figlet_font.flf ~/.local/font/
+
 # fixing the config and changing shell to fish 
-cd ~
 cd ..
 rm usr/etc/motd
 cd ~
-rm -r .*
+rm -rf .*
 curl -O https://raw.githubusercontent.com/takumi55d/My-termux/main/termux-conf.zip
 unzip termux-conf.zip
 chsh -s fish
 rm termux-conf.zip 
+exec fish
