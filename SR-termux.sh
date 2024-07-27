@@ -2,6 +2,7 @@
 
 # update and upgrade
 pkg update
+dpkg --congigure -a
 pkg install x11-repo root-repo tur-repo -y
 pkg upgrade
 
