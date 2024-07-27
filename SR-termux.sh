@@ -3,7 +3,7 @@
 # update and upgrade
 pkg update
 pkg install x11-repo root-repo tur-repo -y
-pkg upgrade -y
+pkg upgrade
 
 # install the tools 
 pkg install micro starship figlet fish eza proot-distro python vim nerdfix -y
