@@ -7,7 +7,7 @@ pkg install x11-repo root-repo tur-repo -y
 pkg upgrade
 
 # install the tools 
-pkg install micro starship figlet fish eza proot-distro python vim nerdfix git wget aria2 -y
+pkg install micro starship figlet fish eza proot-distro python vim nerdfix git wget aria2 tmux fzf -y
 
 #install lolcat
 pip install lolcat
